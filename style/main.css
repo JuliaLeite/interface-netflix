@@ -1,0 +1,106 @@
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Limite da borda da caixa */
+    text-decoration: none;
+}
+
+/* Elementos Base */
+
+body{
+    background-color: var(--preta);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+header .container {
+    display: flex; /* flex-direction: row -> DEFAULT */
+    align-items: center; /* Vertical */
+    justify-content: space-between; /* Horizontal */
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: "Arial Black";
+    font-size: 40px;
+    floar:left;
+    margin-left: 5px;;
+}
+
+header nav a {
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #FFF;
+}
+
+/* Filme Principal */
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)100%), 
+                url('../img/midnight-gospel-background.jpg');
+    background-position: center;
+    height: 400px;
+    background-size: cover ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.filme-principal .description {
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.filme-principal .title {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.button {
+    background-color: rgba(0,0,0,.5);
+    border: none;;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.button:hover {
+    background-color: white;
+    color: var(--preta);
+}
+
+.button i{
+    margin-right: 5px;
+}
+
+.container {
+    margin-left: 30px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrousel-filmes{
+    margin-top:10px;
+}
